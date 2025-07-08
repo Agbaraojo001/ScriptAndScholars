@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Scripts & Scholars | Home</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #003366;
+      color: #ffffff;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* HEADER BAR */
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #002244;
+      padding: 10px 20px;
+      flex-wrap: wrap;
+    }
+
+    /* LOGO LEFT */
+    .logo-box {
+      background-color: white;
+      border-radius: 50px;
+      padding: 5px 10px;
+      display: flex;
+      align-items: center;
+      height: 50px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    }
+
+    .logo-box img {
+      height: 40px;
+      width: auto;
+      border-radius: 50%;
+    }
+
+    /* NAV CENTER */
+    nav {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    nav ul li a {
+      font-size: 1rem;
+      transition: all 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #ffcc00;
+    }
+
+    /* STATIC TITLE SECTION */
+    .static-title {
+      background-color: #222;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    .static-title h1 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .static-title p {
+      font-size: 1rem;
+      color: #ccc;
+    }
+.footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+    }
+    .footer .logo-footer {
+      display: block;
+      margin: 0 auto 10px;
+      height: 40px;
+    }
+    .footer h4 {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .footer .contact-info {
+      margin-top: 10px;
+      color: #ccc;
+      font-size: 0.9rem;
+    }
+    
+    /* ANIMATED TEXT */
+    .animated-text {
+      font-size: 1.1rem;
+      padding: 30px 20px;
+      max-width: 800px;
+      margin: 20px auto;
+      text-align: center;
+      animation: fadeIn 2s ease forwards;
+      opacity: 0;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+
+    /* IMAGE GALLERY */
+    .image-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 30px;
+      gap: 20px;
+    }
+
+    .image-gallery img {
+      width: 200px;
+      height: auto;
+      border-radius: 12px;
+      object-fit: cover;
+      box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .image-gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav {
+        width: 100%;
+        justify-content: center;
+        margin-top: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER with logo and nav -->
+  <header>
+    <div class="logo-box">
+      <img src="https://ik.imagekit.io/dq0q46ope/New%20Folder/Logo_Scripts&Scholars.jpg?updatedAt=1751988769120" alt="Scripts & Scholars Logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- STATIC TITLE SECTION -->
+  <div class="static-title">
+    <h1>SCRIPTS & SCHOLARS</h1>
+    <p>Writing Hub Service – Shaping Ideas, Empowering Minds</p>
+  </div>
+
+  <!-- ANIMATED INTRO -->
+  <div class="animated-text" id="animatedText"></div>
+
+  <!-- IMAGE GALLERY -->
+  <div class="image-gallery">
+    <img src="https://ik.imagekit.io/dq0q46ope/New%20Folder/WhatsApp%20Image%202025-07-08%20at%2016.23.28_2a1aad56.jpg" alt="Gallery Image 1">
+    <img src="https://ik.imagekit.io/dq0q46ope/New%20Folder/WhatsApp%20Image%202025-07-08%20at%2016.23.28_81c581ec.jpg" alt="Gallery Image 2">
+    <img src="https://ik.imagekit.io/dq0q46ope/New%20Folder/WhatsApp%20Image%202025-07-08%20at%2016.23.28_b289813e.jpg" alt="Gallery Image 3">
+    <img src="https://ik.imagekit.io/dq0q46ope/New%20Folder/WhatsApp%20Image%202025-07-08%20at%2016.23.28_e51be54b.jpg" alt="Gallery Image 4">
+    <img src="https://ik.imagekit.io/dq0q46ope/New%20Folder/WhatsApp%20Image%202025-07-08%20at%2016.23.29_b7fdd5b1.jpg" alt="Gallery Image 5">
+  </div>
+
+  <!-- JS for Typewriter Effect -->
+  <script>
+    const animatedText = document.getElementById("animatedText");
+    const message = "Scripts & Scholars Writing Hub is dedicated to providing high-quality academic and professional writing services. We support students, professionals, and entrepreneurs in achieving their goals through well-crafted documents, proposals, and applications. With a team of experienced writers and consultants, we deliver value through excellence, creativity, and personalized service.";
+    let i = 0;
+
+    function typeWriter() {
+      if (i < message.length) {
+        animatedText.innerHTML += message.charAt(i);
+        i++;
+        setTimeout(typeWriter, 20);
+      }
+    }
+
+    window.onload = typeWriter;
+  </script>
+ <footer class="footer">
+    <img src="https://ik.imagekit.io/dq0q46ope/New%20Folder/Logo_Scripts&Scholars.jpg" alt="logo" class="logo-footer"> 
+    <h1>© 2025 Scripts & Scholars Writing Hub</h1>
+    <div class="contact-info">
+      <p>📞 +234-806-864-3588 | +234-706-260-7886</p>
+      <p>✉️ scripts.scholars25@gmail.com</p>
+    </div>
+  </footer>
+</body>
+</html>

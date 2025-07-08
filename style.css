@@ -1,0 +1,51 @@
+/* HOME PAGE */
+body.home {
+  background-color: #003366;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+}
+
+.logo-container {
+  margin-top: 20px;
+}
+
+.logo {
+  width: 300px;
+  max-width: 90%;
+}
+
+.animated-text {
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 20px;
+  max-width: 700px;
+  margin: 0 auto;
+  animation: fadeIn 3s ease forwards;
+  opacity: 0;
+}
+
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
+}
+
+.image-gallery img {
+  width: 200px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+}
+
+/* Animation */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About | Scripts & Scholars</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f4f4;
+      color: #222;
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #002244;
+      padding: 10px 20px;
+      flex-wrap: wrap;
+    }
+
+    .logo-box {
+      background-color: white;
+      border-radius: 50px;
+      padding: 5px 10px;
+      display: flex;
+      align-items: center;
+      height: 50px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    }
+
+    .logo-box img {
+      height: 40px;
+      border-radius: 50%;
+    }
+
+    nav {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    nav ul li a {
+      font-size: 1rem;
+      color: white;
+    }
+
+    .intro-section {
+      background-color: #002244;
+      color: #fff;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .intro-section h1 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .intro-section p {
+      font-size: 1rem;
+      max-width: 700px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    /* ANALYTICS SECTION */
+    .analytics {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      background-color: #ffffff;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .analytics .stat {
+      flex: 1 1 180px;
+      padding: 20px;
+      border-radius: 10px;
+      background: #003366;
+      color: #fff;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .stat h2 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      color: #ffcc00;
+    }
+
+    .stat p {
+      font-size: 0.95rem;
+    }
+
+    /* PROFILES */
+    .founder-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 50px;
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+    }
+    .footer .logo-footer {
+      display: block;
+      margin: 0 auto 10px;
+      height: 40px;
+    }
+    .footer h4 {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .footer .contact-info {
+      margin-top: 10px;
+      color: #ccc;
+      font-size: 0.9rem;
+    }
+    .profile {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 20px;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      width: 100%;
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.8s ease;
+    }
+
+    .profile.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .profile img {
+      width: 150px;
+      height: 200px;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+    .profile-text {
+      flex: 1;
+    }
+
+    .profile-text h2 {
+      margin-bottom: 10px;
+      font-size: 1.5rem;
+      color: #003366;
+    }
+
+    .profile-text p {
+      line-height: 1.6;
+      font-size: 1rem;
+    }
+
+    @media (max-width: 768px) {
+      .profile {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .stat h2 {
+        font-size: 1.5rem;
+      }
+
+      .profile-text h2 {
+        font-size: 1.3rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <header>
+    <div class="logo-box">
+      <img src="https://ik.imagekit.io/dq0q46ope/New%20Folder/Logo_Scripts&Scholars.jpg?updatedAt=1751988769120" alt="Scripts & Scholars Logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- INTRO -->
+  <div class="intro-section">
+    <h1>About Us</h1>
+    <p>
+      Scripts & Scholars was founded in 2024 out of a deep commitment to helping others grow intellectually and professionally. The founder’s passion for empowering minds through writing is the driving force behind this initiative—creating a home for quality research, strategic communication, and project-based solutions.
+    </p>
+  </div>
+
+  <!-- DYNAMIC ANALYTICS -->
+  <div class="analytics">
+    <div class="stat">
+      <h2 id="exp">0</h2>
+      <p>Years of Experience</p>
+    </div>
+    <div class="stat">
+      <h2 id="research">0</h2>
+      <p>Research Projects Completed</p>
+    </div>
+    <div class="stat">
+      <h2 id="assignments">0</h2>
+      <p>Assignments Delivered</p>
+    </div>
+    <div class="stat">
+      <h2 id="papers">0</h2>
+      <p>Research Papers Published</p>
+    </div>
+    <div class="stat">
+      <h2 id="clients">0</h2>
+      <p>Satisfied Clients</p>
+    </div>
+  </div>
+
+  <!-- FOUNDER PROFILES -->
+  <div class="founder-section">
+
+    <div class="profile" id="abiodun">
+      <img src="https://ik.imagekit.io/dq0q46ope/New%20Folder/WhatsApp%20Image%202025-07-08%20at%2017.27.42_1593cc4d.jpg" alt="Agbaraojo Yusuf Abiodun">
+      <div class="profile-text">
+        <h2>Agbaraojo Yusuf Abiodun</h2>
+        <p>
+          Agbaraojo Yusuf Abiodun is an emerging scholar in the field of Project Management, holding a Bachelor of Technology (B.Tech) and a Master of Science (MSc) in Project Management from Lagos State University, graduating with a Ph.D.-level CGPA of 4.39/5.0. His academic training has provided deep grounding in agile project management, risk management, operations strategy, project procurement, and advanced research methods. He has contributed to academic discourse through his thesis on the impact of agile methodologies on IT project success. With a strong interest in applied research, he served as a research assistant at Lagos State University, supporting data analysis, academic writing, and scholarly publications. Currently, he applies theoretical models to real-world practice as a Software Project Manager and Scrum Master at Kounsel, USA. His academic journey is driven by a passion for evidence-based inquiry and a vision to produce research that shapes project management practice in dynamic environments.
+        </p>
+      </div>
+    </div>
+
+    <div class="profile" id="olaitan">
+      <img src="https://ik.imagekit.io/dq0q46ope/New%20Folder/WhatsApp%20Image%202025-07-08%20at%2017.14.48_aabcfeb8.jpg" alt="Ayanleke Adetayo Olaitan">
+      <div class="profile-text">
+        <h2>Ayanleke Adetayo Olaitan</h2>
+        <p>
+          Ayanleke Adetayo Olaitan is an alumnus of Lagos State University, Ojo, where he completed both undergraduate and postgraduate studies. As a passionate ghostwriter, researcher, and agile project management professional, he integrates academic excellence with real-world implementation. His research interests focus on digital transformation, project execution, and sustainable organizational growth. Olaitan brings clarity, consistency, and dedication to every assignment, with a strong belief in continuous development and the power of written solutions to drive impact.
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- JS for SCROLL ANIMATION + COUNTERS -->
+  <script>
+    // Scroll reveal
+    const profiles = document.querySelectorAll('.profile');
+    window.addEventListener('scroll', () => {
+      profiles.forEach(profile => {
+        const rect = profile.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 100) {
+          profile.classList.add('active');
+        }
+      });
+    });
+
+    // Count Up Animation
+    function animateCounter(id, target, speed = 50) {
+      const el = document.getElementById(id);
+      let count = 0;
+      const step = Math.ceil(target / 100);
+      const interval = setInterval(() => {
+        count += step;
+        if (count >= target) {
+          el.textContent = target + "+";
+          clearInterval(interval);
+        } else {
+          el.textContent = count;
+        }
+      }, speed);
+    }
+
+    window.onload = () => {
+      animateCounter("exp", 10);
+      animateCounter("research", 450);
+      animateCounter("assignments", 1000);
+      animateCounter("papers", 10);
+      animateCounter("clients", 800);
+    };
+  </script>
+
+ <footer class="footer">
+    <img src="https://ik.imagekit.io/dq0q46ope/New%20Folder/Logo_Scripts&Scholars.jpg" alt="logo" class="logo-footer"> 
+    <h1>© 2025 Scripts & Scholars Writing Hub</h1>
+    <div class="contact-info">
+      <p>📞 +234-806-864-3588 | +234-706-260-7886</p>
+      <p>✉️ scripts.scholars25@gmail.com</p>
+    </div>
+  </footer>
+
+</body>
+</html>
